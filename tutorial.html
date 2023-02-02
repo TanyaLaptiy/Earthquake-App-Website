@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Earthquake service" />
+    <meta name="author" content="Laptiy_MPB904" />
+    <title>Tutorial</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .col1 span {
+            visibility: hidden;
+            display: none;
+            background: url(/assets/img/ipad.png);
+            background-repeat: round;
+        }
+
+        .col1:hover+drav {
+            background: url(/assets/img/ipad.png);
+            background-repeat: round;
+            display: block;
+            height: 200px;
+            width: 200px;
+            margin-left: 200px;
+            border: 2px solid #666;
+            visibility: visible;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body id="Главная-страница">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#Главная-страница">Earthquake and Air Travel Site</a>
+
+            <div class="dropdown">
+                <button class="dropbtn navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a class="nav-link" href="index.html#about">About</a>
+                    <a class="nav-link" href="index.html#description">Description</a>
+                    <a class="nav-link" href="index.html#signup">Contact</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#description">Description</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#signup">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section-gen text-center" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-black mb-4">Our service</h2>
+                </div>
+            </div>
+            <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+        </div>
+    </section>
+    <section class="projects-section bg-light" id="description">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/tut_img/main.jpg"
+                        alt="..." /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Первоначальный экран (online) </h4>
+                        <p class="text-black-50 mb-0"> При запуске прилажения, после экрана загрузки
+                            пользователя встречает экран с картой, на которой присутствуют маркеры разных типов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center " id='org_div1'>
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/tut_img/main2.jpg"
+                        alt="..." /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Первоначальный экран (offline)</h4>
+                        <p class="text-black-50 mb-0">Есть возможность запустить прилажение в offline режиме, в данном
+                            случае функциональность будет ограничена, а при попытке обратиться к такому фунционалу
+                            появится соответствующее предупреждение.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/tut_img/legend.jpg" alt="..." /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Легенда</h4>
+                                <p class="mb-0 text-white-50">Благодаря легенде пользователь может быстро понять
+                                    значение каждого типа маркеров. На легенде информация разбита на три блока: Shape,
+                                    Color, Size. В первом блоке первый маркер обозначает аэропорт, второй - город,
+                                    третий- землетрясение произошедшее на земле, четвертый- землетрясение произошедшее
+                                    под водой. Маркеры землетрясений могу иметь разные цвета, значение которых пожно
+                                    узнать во втором блоке: голубой - глубина очага нормальная, синий- промежуточная,
+                                    темно-синий - большая. Диаметр маркера связан с магнитудой землятресения, о чем
+                                    говорит третий блок легенды.</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/tut_img/info.jpg" alt="..." /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Общяя информация</h4>
+                                <p class="mb-0 text-white-50">В данном окне содержится сводка стран с количеством
+                                    землятресений, произошедших в каждой стране. Последние две строки в списке: Сумарное
+                                    количество земляресений в океане и сумарное количество землятресений на земле.</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/tut_img/highbar.jpg" alt="..." /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Верхняя панель</h4>
+                                <p class="mb-0 text-white-50">Верхняя панель. Кнопка №1 -скрыть/показать города, №2 -
+                                    скрыть/показать землятресения, №3- скрыть/показать аэропорты, №4- Выбор страны, №5 -
+                                    скрыть/показать легенду, №6- скрыть/показать информацию, №7- Построить маршрут, №8-
+                                    Землятресения в дату, # 9 – рейтинг</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/tut_img/lowbar.jpg" alt="..." /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Нижняя панель.</h4>
+                                <p class="mb-0 text-white-50">Нижняя панель. Кнопка №1 - онлайн/офлайн режим, №2 -
+                                    календарь, №3- интересные факты, №4- создание запроса на добавление землетрясения,
+                                    №5- чат, №6- вход в систему, №7 – регистрация</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="signup-section" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <p>
+                    <form class="form-signup" id="contactForm" action="index.html" target="_self">
+                        <button class="btn btn-primary" id="submitButton">Homepage</button>
+                    </form>
+                    </p>
+                    <p>
+                    <form class="form-signup" id="contactForm" action="info.html" target="_self">
+                        <button class="btn btn-primary" id="submitButton">Back to list</button>
+                    </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/tut_scripts.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

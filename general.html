@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Earthquake service" />
+    <meta name="author" content="Laptiy_MPB904" />
+    <title>Earthquake and Air Travel Site</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="Главная-страница">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <!--Используtv <a class="navbar-brand">, чтобы создать Brand (Место для логотипа/имени сайта).-->
+            <a class="navbar-brand" href="#Главная-страница">Earthquake and Air Travel Site</a>
+            <!--Чтобы навигационный бар менялся от строки до кнопки (когда пользователь 
+                    нажимает на этот button, навигационный бар будет отображен вертикально),
+                     вам нужно использовать комбинацию следующих классов css:
+                          collapse
+                          navbar-collapse
+                          navbar-toggler-->
+            <div class="dropdown">
+                <button class="dropbtn navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a class="nav-link" href="index.html#about">About</a>
+                    <a class="nav-link" href="index.html#description">Description</a>
+                    <a class="nav-link" href="index.html#signup">Contact</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#description">Description</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#signup">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section-gen text-center" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+
+                    <h2 class="text-black mb-4">
+                        ЗЕМЛЕТРЯСЕНИЯ. ПРИЧИНЫ ВОЗНИКНОВЕНИЯ ЗЕМЛЕТРЯСЕНИЯ И ЕГО ВОЗМОЖНЫЕ ПОСЛЕДСТВИЯ</h2>
+                    <p class="text-black-50">
+                        Землетрясение – это природное явление, связанное с геологическими процессами, происходящими в
+                        литосфере Земли. Землетрясение проявляется в виде подземных толчков и колебаний земной
+                        поверхности, возникающих в результате внезапных смещений и разрывов в земной коре или в верхней
+                        части мантии. Эти смещения и разрывы обусловлены глубинными процессами, происходящими в
+                        литосфере и связанными с движением литосферных плит. В горных поясах и вблизи них внутриземное
+                        напряжение нарастает и растёт до тех пор, пока не превысит сопротивление горных пород, в
+                        результате происходит разрыв горных пород и их смещение. Внутриземное напряжение скачкообразно
+                        сбрасывается. Потенциальная энергия деформации переходит в кинетическую энергию, которая
+                        рассеивается в разные стороны от места разрыва в виде сейсмических волн. Сейсмические волны
+                        колеблют Землю. Сейсмический разрыв земной коры зарождается всегда в глубине. Очень редко
+                        бывает, когда глубина разрыва не превышает 3-5 км, чаще всего это происходит на глубине 10-15
+                        км. Установлено, что на глубинах до 5 км обычно возникают слабые подземные толчки, мощные
+                        землетрясения зарождаются на глубине 40-60 км. Место разрушения горной породы называют очагом
+                        землетрясения или гипоцентром. Очаг землетрясения – это пространство внутри Земли, где произошло
+                        разламывание горных пород.
+                    </p>
+                </div>
+            </div>
+            <img class="img-fluid" src="assets/info/Spectrum Analysis.png" alt="..." />
+        </div>
+    </section>
+    <section class="projects-section bg-light" id="description">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-5"><img class="img-fluid" src="assets/info/info-01.jpg" alt="..." /></div>
+                <div class="col-lg-7">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <p class="mb-0 text-white-50">
+                                    Для измерения энергии, выделяемой в очаге землетрясения, была введена
+                                    <a type="button" id="RihterL" class="mb-0 text-white-50">шкала Рихтера</a>
+                                    <em id="Rihter" class="mb-0 text-white-50"></em>
+                                </p>
+                                <p class="mb-0 text-white-50">, имеющая 9 делений – от 1 до 9. За единицу измерения в
+                                    шкале Рихтера взята <strong>магнитуда</strong> – условная величина, которая
+                                    показывает не энергию, выделившуюся при разломе, а величину, пропорциональную ей.
+                                    Магнитуда – это безразмерная величина, которая характеризует общую энергию
+                                    сейсмических колебаний.</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-5"><img class="img-fluid" src="assets/info/info-02.jpg" alt="..." /></div>
+                <div class="col-lg-7 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <p class="mb-0 text-white-50"><strong>Эпицентр землетрясения</strong> – это условная
+                                    точка на земле, расположенная над очагом землетрясения, над тем местом, где в
+                                    глубине Земли зародился первый толчок колебания и смещения горных пород, возникли
+                                    сейсмические волны, которые разбежались от центра в разные стороны.
+                                    Сейсмические волны могут быть разных типов – продольные, поперечные и поверхностные.
+                                    У них разные скорости движения, энергия и сила воздействия. Чем дальше волна от
+                                    эпицентра, тем слабее землетрясение.</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about-section-tut text-center" id="levels">
+        <div class="container px-4 px-xl-8">
+            <div class="row gx-0 justify-content-center">
+                <div class="col-xl-8">
+                    <p class="text-white-50"> Шкала Меркали имеет 12 делений – от 1 до 12. Это значит, что все возможные
+                        землетрясения разбиты на 12 групп по нарастающей силе их проявления.<br>
+                    </p>
+                    <p class="text-white-50">1 балл (незаметное) – землетрясение, при котором только приборы улавливают
+                        колебания почвы.<br>
+                        2 балла (очень слабое) – землетрясение практически не ощущается людьми.<br>
+                        3 балла (слабое) – колебания отмечаются немногими людьми.<br>
+
+                        4 балла (умеренное) – землетрясение отмечается многими людьми; открываются неплотно закрытые
+                        окна и двери.<br>
+
+                        5 баллов (довольно сильное) – раскачиваются висящие предметы, скрипят полы, дребезжат стёкла,
+                        осыпается побелка в домах.<br>
+
+                        6 баллов (сильное) – землетрясение ведёт к лёгкому повреждению некоторых зданий: появляются
+                        тонкие трещины в штукатурке, в печах.<br>
+
+                        7 баллов (очень сильное) – неизбежны значительные повреждения некоторых зданий: появляются
+                        трещины в штукатурке, отламываются отдельные её куски, возникают тонкие трещины в стенах,
+                        повреждаются дымовые трубы.<br>
+
+                        8 баллов (разрушительное) – наблюдаются разрушения в зданиях: образуются большие трещины в
+                        стенах, падают карнизы, дымовые трубы; на склонах гор появляются оползи и трещины шириной до
+                        нескольких сантиметров.<br>
+
+                        9 баллов (опустошительное) – происходят обвалы во многих зданиях, обрушиваются стены,
+                        перегородки, кровля; в грунтах образуются трещины шириной 30 см и более; наблюдаются обвалы,
+                        осыпи, оползни в горах.<br>
+
+                        10 баллов (уничтожающее) – разрушение большинства зданий; в некоторых – серьёзные повреждения;
+                        образуются трещины в грунте до 1 м шириной, происходят обвалы, оползни; за счёт завалов в речных
+                        долинах возникают озёра.<br>
+
+                        11 баллов (катастрофа) – характерны многочисленные трещины на поверхности земли и вертикальные
+                        перемещения по ним, большие обвалы в горах; общие разрушения зданий.<br>
+
+                        12 баллов (сильная катастрофа) – происходит сильное изменение рельефа местности; образуются
+                        многочисленные трещины, вертикальные и горизонтальные перемещения по ним; огромные обвалы и
+                        оползни; изменяются русла рек, образуются водопады и озёра; характерно разрушение всех зданий и
+                        сооружений.
+                    </p>
+                </div>
+            </div>
+
+            <img class="img-fluid" src="assets/info/level_1.jpg" alt="..." />
+        </div>
+    </section>
+
+    <section class="projects-section-tut bg-light" id="rules">
+        <div class="container px-4 px-lg-5">
+
+
+            <div class="featured-text text-lg-left text-lg-left">
+                <h4>ПРАВИЛА ПОВЕДЕНИЯ И ДЕЙСТВИЙ ПРИ ЗЕМЛЕТРЯСЕНИИ</h4>
+                <p class="text-black-50 col-xl-8">Землетрясение – это, пожалуй, наиболее опасное стихийное бедствие. Уже
+                    в первые секунды после его начала могут разрушиться целые здания, погребая под своими обломками
+                    людей. Проблема усугубляется тем, что одномоментно могут быть уничтожены сотни и даже тысячи
+                    строений, поэтому часто не удается оперативно разобрать все завалы и успеть вытащить всех, кто смог
+                    пережить само землетрясение.
+                </p>
+            </div>
+
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-md-4"><img class="img-fluid" src="assets/info/info-0_01.jpg" alt="..." /></div>
+                <div class="col-lg-8">
+                    <div class="bg-light text-lg-left h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text my-auto text-lg-left text-lg-left">
+                                <h4 class="text-black">Как подготовиться к землетрясению</h4>
+                                <p class="mb-0 text-black-50">- заранее продумайте план действий во время землетрясения
+                                    при нахождении дома, на работе, на транспорте и на улице;</p>
+                                <p class="mb-0 text-black-50">- держите в удобном месте документы, деньги, карманный
+                                    фонарик и запасные батарейки;</p>
+                                <p class="mb-0 text-black-50">- имейте дома запас питьевой воды и консервов в расчете на
+                                    несколько дней;</p>
+                                <p class="mb-0 text-black-50">- уберите кровати от окон и наружных стен;</p>
+                                <p class="mb-0 text-black-50">- закрепите шкафы, полки и стеллажи в квартирах, а с
+                                    верхних полок и антресолей снимите тяжелые предметы;</p>
+                                <p class="mb-0 text-black-50">- опасные вещества (ядохимикаты), легковоспламеняющиеся
+                                    жидкости храните в надежном, хорошо изолированном месте;</p>
+                                <p class="mb-0 text-black-50">- все жильцы должны знать, где находится рубильник,
+                                    магистральные газовые и водопроводные краны, чтобы в случае необходимости отключить
+                                    электричество, газ и воду.</p>
+
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-0 justify-content-center">
+                <div class="col-md-4"><img class="img-fluid" src="assets/info/info-0_02.jpg" alt="..." /></div>
+                <div class="col-lg-8 order-lg-first">
+                    <div class="bg-light text-lg-left h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-left text-lg-right">
+                                <h4 class="text-black">Как действовать во время землетрясения</h4>
+                                <p class="mb-0 text-black-50">Ощутив колебания здания, увидев качание светильников,
+                                    падение предметов, услышав нарастающий гул и звон бьющегося стекла, не поддавайтесь
+                                    панике (от момента, когда Вы почувствовали первые толчки до опасных для здания
+                                    колебаний у Вас есть 15—20 секунд).</p>
+                                <p class="mb-0 text-black-50">- Быстро выйдите из здания, взяв документы, деньги и
+                                    предметы первой необходимости. Покидая помещение спускайтесь по лестнице, а не на
+                                    лифте.</p>
+                                <p class="mb-0 text-black-50">- Оказавшись на улице — отойдите на открытое место,
+                                    площадь, пустырь - подальше от зданий, столбов и линий электропередач.</p>
+                                <p class="mb-0 ">- Если Вы остались в помещении, то встаньте в безопасном
+                                    месте — у внутренней стены, в углу, во внутреннем стенном проеме или у несущей
+                                    опоры. Если возможно, спрячьтесь под стол — он защитит вас от падающих предметов и
+                                    стояков. Держитесь подальше от окон и тяжелой мебели. Если с Вами дети — укройте их
+                                    собой.</p>
+                                <p class="mb-0 text-black-50">- Если Вы находитесь в автомобиле, оставайтесь на открытом
+                                    месте, откройте двери, но не покидайте автомобиль, пока толчки не прекратятся.</p>
+
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-md-4"><img class="img-fluid" src="assets/info/info-0-022.jpg" alt="..." /></div>
+                <div class="col-lg-7">
+                    <div class="bg-light text-lg-left h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-left text-lg-left">
+                                <h4 class="text-black">Как действовать после землетрясения</h4>
+                                <p class="mb-0 text-black-50">- Окажите первую медицинскую помощь нуждающимся.</p>
+                                <p class="mb-0 text-black-50">- Освободите попавших в легкоустранимые завалы.</p>
+                                <p class="mb-0 text-black-50">- Будьте осторожны! Обеспечьте безопасность детей,
+                                    больных, стариков. Успокойте их.</p>
+                                <p class="mb-0 text-black-50">- Слушайте сообщения местного радио, подчиняйтесь
+                                    указаниям властей, штаба по ликвидации последствий стихийного бедствия.</p>
+                                <p class="mb-0 text-black-50">- Перед тем как войти в здание, убедитесь, не угрожает ли
+                                    оно обвалом лестниц, стен, перекрытий, не подходите к явно поврежденным зданиям.</p>
+                                <p class="mb-0 text-black-50">- Не пользуйтесь сигналами, электровыключателями из-за
+                                    опасности взрыва скопившихся газов.</p>
+                                <p class="mb-0 text-black-50">- Вернувшись в квартиру, дом, проверьте нет ли повреждений
+                                    электропроводки, газо- и водопроводных сетей. Устраните неисправность или отключите
+                                    сети. Не спускайте воду в туалете.</p>
+
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 justify-content-center">
+                <div class="col-md-4"><img class="img-fluid" src="assets/info/info-0_03.jpg" alt="..." /></div>
+                <div class="col-lg-8 order-lg-first">
+                    <div class="bg-light text-left h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-left text-lg-right">
+                                <h4 class="text-black">Если вы погребены под обломками</h4>
+                                <p class="mb-0 text-black-50">Дышать глубоко, не позволяйте победить себя страху и пасть
+                                    духом, надо попытаться выжить любой ценой. Верьте, что помощь придет обязательно.
+                                </p>
+                                <p class="mb-0 text-black-50">- Оцените ситуацию и изучите, что есть в ней
+                                    положительного (отсутствие ран, свобода действий, поступление свежего воздуха).</p>
+                                <p class="mb-0 text-black-50">- Голосом и стуком привлекайте внимание людей.</p>
+                                <p class="mb-0 text-black-50">- Не зажигайте спички, зажигалки, свечи, берегите
+                                    кислород.</p>
+                                <p class="mb-0 text-black-50">- Если единственным путем выхода является узкий лаз, вы
+                                    должны протискиваться, прижав локти к бокам, толкаясь ногами, как черепаха.</p>
+                                <p class="mb-0 text-black-50">- Если имеется возможность с помощью подручных предметов
+                                    (доски, кирпича и т. п.) укрепите потолок от обрушения и дожидайтесь помощи. Ищите
+                                    одежду и одеяла.</p>
+                                <p class="mb-0 text-black-50">- Если вас придавило землей, попытайтесь перевернуться на
+                                    живот, чтобы ослабить давление на грудную клетку и брюшную полость.</p>
+                                <p class="mb-0 text-black-50">Придавленные руки и ноги чаще растирайте, массируйте,
+                                    восстанавливая кровообращение. При сильной жажде положите в рот небольшой гладкий
+                                    камушек или обрывок носового платка и сосите его.</p>
+
+
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signup-section-tut" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <p>
+                    <form class="form-signup" id="contactForm" action="index.html" target="_self">
+                        <button class="btn btn-primary" id="submitButton">Homepage</button>
+                    </form>
+                    </p>
+                    <p>
+                    <form class="form-signup" id="contactForm" action="info.html" target="_self">
+                        <button class="btn btn-primary" id="submitButton">Back to list</button>
+                    </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">МПБ - 904 (Лаптiй) 2022</div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/gen_scripts.js"></script>
+
+</body>
+
+</html>
